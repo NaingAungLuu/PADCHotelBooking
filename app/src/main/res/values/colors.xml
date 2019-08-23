@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#A136FF</color>
+    <color name="bottom_nav_color">#9339FC</color>
+    <color name="tv_discount_color">#FF115C</color>
+    <color name="color_gray">#838383</color>
+</resources>

@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_explore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Explore"
+            android:textSize="@dimen/textsize_large"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_margin="@dimen/margin_medium"
+            />
+
+        <android.support.design.chip.Chip
+            android:id="@+id/chp_filters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignBaseline="@id/tv_explore"
+            android:text="Filters"
+            android:foregroundTint="@color/colorAccent"
+            android:checkable="false"
+            android:layout_margin="@dimen/margin_medium"
+            app:chipIcon="@drawable/filter"
+            app:chipIconSize="@dimen/margin_medium"
+            app:iconStartPadding="@dimen/margin_small"
+            />
+
+    </RelativeLayout>
+
+
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_below="@id/tv_explore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_medium"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:layout_marginBottom="@dimen/margin_small"
+                app:hintTextAppearance="@style/HintText"
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_Location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Location"
+                    android:textSize="@dimen/textsize_medium"
+                    android:drawableRight="@drawable/ic_near_me_black_24dp"
+                    android:drawableTint="@color/colorAccent"
+                    android:layout_gravity="center_vertical"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:weightSum="2">
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_below="@id/tv_explore"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginRight  ="@dimen/margin_small"
+            app:hintTextAppearance="@style/HintText"
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_check_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/et_check_in_hint"
+            android:inputType="date"
+            android:textSize="@dimen/textsize_medium"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_below="@id/tv_explore"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_small"
+            app:hintTextAppearance="@style/HintText"
+            >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/et_check_out"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/et_check_out_hint"
+                android:inputType="date"
+                android:textSize="@dimen/textsize_medium"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:weightSum="2">
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_below="@id/tv_explore"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginRight  ="@dimen/margin_small"
+            app:hintTextAppearance="@style/HintText"
+            >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/et_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/et_count_hint"
+                android:textSize="@dimen/textsize_medium"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_below="@id/tv_explore"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_small"
+            app:hintTextAppearance="@style/HintText"
+            >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/et_room"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/et_rooms_hint"
+                android:inputType="number"
+                android:textSize="@dimen/textsize_medium"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:weightSum="5"
+        android:gravity="center_vertical">
+
+        <Button
+            android:id="@+id/btn_search_now"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/search_button_height"
+            android:layout_weight="4"
+            android:layout_marginRight="@dimen/margin_small"
+            android:text="SEARCH NOW"
+            android:textStyle="bold"
+            android:textSize="@dimen/textsize_medium"
+            android:background="@drawable/bg_purple_button"
+            android:layout_gravity="center_vertical"/>
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/btn_map"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_map_black_24dp"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:background="@drawable/bg_purple_button"
+            android:layout_gravity="center_vertical"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_top_searches"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_top_searches"
+            android:textSize="@dimen/textsize_medium2x"
+            android:textColor="@color/color_gray"
+            android:textStyle="bold"
+            android:layout_margin="@dimen/margin_medium"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_top_searches"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginBottom="@dimen/margin_small">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/margin_large2x"
+        >
+
+        <TextView
+            android:id="@+id/tv_recent_searches"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_recent_searches"
+            android:textSize="@dimen/textsize_medium2x"
+            android:textColor="@color/color_gray"
+            android:textStyle="bold"
+            android:layout_margin="@dimen/margin_medium"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_recent_searches"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginBottom="@dimen/margin_small">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

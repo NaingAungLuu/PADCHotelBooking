@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<resources>
+
+    <string-array name="arr_locations">
+
+        <item>Yangon</item>
+        <item>Mandalay</item>
+        <item>Maw La Myaing</item>
+        <item>Pyin Oo Lwin</item>
+        <item>Ayeyarwaddy</item>
+        <item>Shan State</item>
+
+    </string-array>
+
+</resources>

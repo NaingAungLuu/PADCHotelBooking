@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">PADC Hotel Booking</string>
+    <string name="title_home">Home</string>
+    <string name="title_search">Search</string>
+    <string name="title_events">Events</string>
+    <string name="title_saved">Saved</string>
+    <string name="tv_popular">Popular</string>
+    <string name="tv_nearby">Nearby</string>
+    <string name="tv_all">All</string>
+    <string name="tv_rating">4.5 (21 ratings)</string>
+    <string name="tv_price_per_day">$99/day</string>
+    <string name="tv_hotel_name">Lotte Hotel</string>
+    <string name="tv_hotel_location">Yangon, Myanmar</string>
+    <string name="et_count_hint">Count</string>
+    <string name="et_rooms_hint">Rooms</string>
+    <string name="et_check_out_hint">Check Out</string>
+    <string name="et_check_in_hint">Check In</string>
+    <string name="tv_top_searches">TOP SEARCHES</string>
+    <string name="tv_recent_searches">RECENT SEARCHES</string>
+</resources>
