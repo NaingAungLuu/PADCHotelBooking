@@ -17,4 +17,5 @@
     <string name="et_check_in_hint">Check In</string>
     <string name="tv_top_searches">TOP SEARCHES</string>
     <string name="tv_recent_searches">RECENT SEARCHES</string>
+    <string name="chp_none">NONE</string>
 </resources>

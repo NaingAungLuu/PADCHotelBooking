@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
             switch (item.getItemId()) {
                 case R.id.navigation_home: loadFragment(new HomeFragment());
                     return true;
-                case R.id.navigation_search: loadFragment(new ExploreFragment());
+                case R.id.navigation_explore: loadFragment(new ExploreFragment());
                     return true;
                 case R.id.navigation_events:
                     return true;
@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
         navView = findViewById(R.id.nav_view);
         navView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
         loadFragment(new HomeFragment());
+
 
     }
 

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_medium"
+            android:text="Cancel"
+            android:clickable="true"
+            android:textSize="@dimen/textsize_medium2x"
+            android:layout_alignBaseline="@id/tv_filter"
+            android:textColor="@color/colorAccent"
+            android:background="?android:attr/selectableItemBackground"/>
+
+        <TextView
+            android:id="@+id/tv_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium"
+            android:text="Filter"
+            android:textStyle="bold"
+            android:textSize="@dimen/textsize_medium3d"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_medium"
+            android:layout_alignParentRight="true"
+            android:text="Reset"
+            android:clickable="true"
+            android:textSize="@dimen/textsize_medium2x"
+            android:textColor="@color/colorAccent"
+            android:background="?android:attr/selectableItemBackground"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/margin_medium">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SORT BY"
+            android:textSize="@dimen/textsize_medium"
+            android:textColor="@color/color_gray"
+            android:textStyle="bold"
+            android:layout_margin="@dimen/margin_medium" />
+
+        <Spinner
+            android:id="@+id/spinner_sorter"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="@dimen/textsize_medium2x"
+            android:layout_marginRight="@dimen/margin_medium2x"
+            android:entries="@array/arr_sorters"
+            >
+
+        </Spinner>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_marginBottom="@dimen/margin_medium2x"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium"
+            android:text="RATING"
+            android:textColor="@color/color_gray"
+            android:textSize="@dimen/textsize_medium"
+            android:textStyle="bold" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.chip.ChipGroup
+                android:id="@+id/chp_rating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_medium"
+                app:chipSpacing="@dimen/margin_small"
+                app:singleLine="true"
+                app:singleSelection="true">
+
+                <android.support.design.chip.Chip
+                    style="@style/ChipStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/chp_none" />
+
+                <android.support.design.chip.Chip
+                    style="@style/ChipStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1 Star"
+                    app:chipIcon="@drawable/filter" />
+
+                <android.support.design.chip.Chip
+                    style="@style/ChipStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2 Stars" />
+
+                <android.support.design.chip.Chip
+                    style="@style/ChipStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3 Stars" />
+
+                <android.support.design.chip.Chip
+                    style="@style/ChipStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4 Stars" />
+
+                <android.support.design.chip.Chip
+                    style="@style/ChipStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5 Stars" />
+
+            </android.support.design.chip.ChipGroup>
+
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <com.crystal.crystalrangeseekbar.widgets.CrystalRangeSeekbar
+        android:id="@+id/sb_price_range"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_medium"
+        app:bar_color="@color/color_gray"
+        app:bar_highlight_color="@color/colorAccent"
+        app:min_value="100"
+        app:max_value="1000"
+        app:steps="25"
+        app:corner_radius="20"
+        app:left_thumb_color="@color/colorAccent"
+        app:right_thumb_color="@color/colorAccent"
+
+        />
+
+        <TextView
+            android:id="@+id/tv_min_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="250"
+        android:textStyle="bold"
+        android:textSize="@dimen/textsize_medium"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/sb_price_range"
+        android:layout_alignLeft="@id/sb_price_range"
+        android:layout_marginLeft="@dimen/margin_small"/>
+
+        <TextView
+            android:id="@+id/tv_max_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Average - 250$"
+            android:textStyle="bold"
+            android:textSize="@dimen/textsize_medium"
+            android:textColor="@android:color/black"
+            android:layout_below="@id/sb_price_range"
+            android:layout_alignRight="@id/sb_price_range"
+            android:layout_marginLeft="@dimen/margin_small"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:weightSum="5"
+        android:gravity="center_vertical">
+
+
+
+        <Button
+            android:id="@+id/btn_search_now"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/search_button_height"
+            android:layout_weight="4"
+            android:layout_marginRight="@dimen/margin_small"
+            android:text="FILTER NOW"
+            android:textStyle="bold"
+            android:textSize="@dimen/textsize_medium"
+            android:theme="@style/AppTheme"
+            android:layout_gravity="center_vertical" />
+
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/btn_map"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_map_black_24dp"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:background="@drawable/bg_purple_button"
+            android:layout_gravity="center_vertical"
+            android:elevation="5dp"/>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

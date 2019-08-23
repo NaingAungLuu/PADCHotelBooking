@@ -8,15 +8,30 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="AppTheme.NoActionBar">
+    <style name="AppTheme.NoActionBar" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="colorAccent">@color/colorAccent</item>
         <item name="windowActionBar">false</item>
         <item name="android:statusBarColor">@color/colorPrimary</item>
         <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
     </style>
 
     <style name="HintText" parent="TextAppearance.Design.Hint">
         <item name="android:textSize">@dimen/textsize_medium2x</item>
         <item name="android:textColor">@color/colorAccent</item>
+    </style>
+    <style name="ChipStyle" parent="Widget.MaterialComponents.Chip.Choice" tools:ignore="ResourceCycle">
+
+        <item name="chipBackgroundColor">@color/chip_bg</item>
+        <item name="android:textColor">@color/chip_text_bg</item>
+        <item name="checkedIconEnabled">false</item>
+        <item name="chipIconSize">10dp</item>
+        <item name="chipStrokeColor">@color/chip_stoke_bg</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="android:colorPrimary">@android:color/holo_blue_dark</item>
+        <item name="android:checkable">true</item>
+        <item name="android:checkableBehavior">single</item>
+        <item name="chipCornerRadius">5dp</item>
+        <item name="closeIconEnabled">false</item>
     </style>
 </resources>

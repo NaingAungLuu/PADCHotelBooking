@@ -14,4 +14,15 @@
 
     </string-array>
 
+    <string-array name="arr_sorters">
+
+        <item>Price : Highest to Lowest</item>
+        <item>Price : Lowest to Highest </item>
+        <item>Name : A to Z</item>
+        <item>Name : Z to A</item>
+        <item>Rating : Highest to Lowest</item>
+        <item>Rating : Lowest to Highest</item>
+
+    </string-array>
+
 </resources>
